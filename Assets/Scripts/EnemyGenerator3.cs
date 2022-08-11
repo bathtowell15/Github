@@ -2,20 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyGenerator : MonoBehaviour
+public class EnemyGenerator3 : MonoBehaviour
 {
     public GameObject enemyPrefab;
     void Start()
     {
-        InvokeRepeating("Spawn", 4f, 9.0f);
+        InvokeRepeating("Spawn", 3f, 7.5f);
     }
 
     void Spawn()
     {
         Vector3 spawnPosition = new Vector3(
             transform.position.x,
-            //Random.Range(-2.2f, -2.3f),
-            -2.2f,
+            0.52f,
             transform.position.z
             );
         Instantiate(
@@ -26,8 +25,8 @@ public class EnemyGenerator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+   // void Update()
+    //{
 
-    }
+    //}
 }

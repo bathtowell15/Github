@@ -323,7 +323,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -381,6 +381,8 @@ GameObject:
   m_Component:
   - component: {fileID: 625187365}
   - component: {fileID: 625187364}
+  - component: {fileID: 625187366}
+  - component: {fileID: 625187367}
   m_Layer: 0
   m_Name: EnemyGenerator
   m_TagString: Untagged
@@ -416,6 +418,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &625187366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625187363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12de7cae707f50a468f5d7c50c920c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 5098772403934733749, guid: d207d3d5625c18b4097567ee117cb1c6, type: 3}
+--- !u!114 &625187367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625187363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd6d9e87265fee41bea22b56c36fb28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 5098772403934733749, guid: d207d3d5625c18b4097567ee117cb1c6, type: 3}
 --- !u!1 &733050929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1044,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.518
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

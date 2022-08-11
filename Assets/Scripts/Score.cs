@@ -7,19 +7,19 @@ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    public static float CountDownTime; // ƒJƒEƒ“ƒgƒ_ƒEƒ“ƒ^ƒCƒ€
-    public Text TextCountDown; // •\¦—pƒeƒLƒXƒgUI
+    public static float CountDownTime; // ï¿½Jï¿½Eï¿½ï¿½ï¿½gï¿½_ï¿½Eï¿½ï¿½ï¿½^ï¿½Cï¿½ï¿½
+    public Text TextCountDown; // ï¿½\ï¿½ï¿½ï¿½pï¿½eï¿½Lï¿½Xï¿½gUI
 
     void Start()
     {
-        CountDownTime = 30.0F;    // ƒJƒEƒ“ƒgƒ_ƒEƒ“ŠJn•b”‚ğƒZƒbƒg
+        CountDownTime = 47.0F;    // ï¿½Jï¿½Eï¿½ï¿½ï¿½gï¿½_ï¿½Eï¿½ï¿½ï¿½Jï¿½nï¿½bï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g
     }
 
     void Update()
     {
-        // ƒJƒEƒ“ƒgƒ_ƒEƒ“ƒ^ƒCƒ€‚ğ®Œ`‚µ‚Ä•\¦
+        // ï¿½Jï¿½Eï¿½ï¿½ï¿½gï¿½_ï¿½Eï¿½ï¿½ï¿½^ï¿½Cï¿½ï¿½ï¿½ğ®Œ`ï¿½ï¿½ï¿½Ä•\ï¿½ï¿½
         TextCountDown.text = string.Format("Time: {0:00.00}", CountDownTime);
-        // Œo‰ß‚ğˆø‚¢‚Ä‚¢‚­
+        // ï¿½oï¿½ßï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
         CountDownTime -= Time.deltaTime;
 
         if (CountDownTime <= 0.0F)
